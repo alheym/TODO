@@ -4,9 +4,9 @@ type Props = React.InputHTMLAttributes<HTMLInputElement> & {
     customField: string;
 };
 
-const Input: FC<Props> = ({ onChange, value }) => {
+const Input: FC<Props> = ({ onChange, value, placeholder }) => {
     return (
-        <input onChange={onChange} value={value} />
+        <input onChange={onChange} value={value} placeholder={placeholder} />
     );
 }
 
