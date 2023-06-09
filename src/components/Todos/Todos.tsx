@@ -40,7 +40,7 @@ const Todos: FC<{}> = () => {
             <Input
                 customField="str"
                 value={text}
-                placeholder="Введите название нового поля"
+                placeholder="Что нужно сделать?"
                 onChange={handleChangeAddElementInput}
             />
             <Button onClick={handleAdd}>
@@ -50,7 +50,7 @@ const Todos: FC<{}> = () => {
             <div>
                 <Input
                     customField="filter"
-                    placeholder="Фильтурем"
+                    placeholder="Что ищем?"
                     onChange={handleFilter}
                 />
 
